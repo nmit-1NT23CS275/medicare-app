@@ -2,7 +2,6 @@ services:
   - type: web
     name: medicare-api
     runtime: node
-    plan: free
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -12,7 +11,6 @@ services:
   - type: web
     name: medicare-web
     runtime: static
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
