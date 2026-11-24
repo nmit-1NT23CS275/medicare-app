@@ -4,7 +4,7 @@ import Home from './pages/Home.jsx'
 import Doctors from './pages/Doctors.jsx'
 import Appointment from './pages/Appointment.jsx'
 import MyAppointments from './pages/MyAppointments.jsx'
-import Chatbot from './components/Chatbot.jsx'
+import Chatbot from './components/chatbot.jsx'
 
 function App() {
   return (
