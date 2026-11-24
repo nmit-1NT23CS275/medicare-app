@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: medicare-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+
+  - type: static
+    name: medicare-web
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://medicare-api.onrender.com
