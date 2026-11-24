@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Chatbot.css';
+import './chatbot.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
